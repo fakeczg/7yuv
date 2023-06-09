@@ -1,0 +1,14 @@
+Source: 7yuv
+Section: editors
+Priority: optional
+Homepage: http://datahammer.de/
+Maintainer: Horst Miller <horst@datahammer.de>
+Build-Depends: cdbs
+Standards-Version: 3.7.2
+
+Package: 7yuv
+Architecture: amd64
+Depends: libc6 (>= 2.3.4), libqtcore4 (>= 4.8.0), libqtgui4 (>= 4.8.0), libqt4-opengl (>= 4.8.0), libstdc++6 (>= 4.1.1)
+Description: Datahammer 7yuv YUV Viewer, RGB Viewer, and Hex Editor
+ 7yuv is is a tool for editing and visualizing raw graphics data and binary files. It assists in development of games, video codecs, and general graphics programming.
+

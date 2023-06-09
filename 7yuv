@@ -1,0 +1,24 @@
+#!/bin/sh
+YUY_LIB=/data/bin/7yuv-2.5/qt4
+EXEC="/data/bin/7yuv-2.5/7yuvbase"
+if [ -n "$LD_LIBRARY_PATH" ]; then
+	export LD_LIBRARY_PATH="$YUY_LIB:$LD_LIBRARY_PATH"
+else
+	export LD_LIBRARY_PATH="$YUY_LIB"
+fi
+
+#check to see if we have all of the shared libraries.
+if ldd "$EXEC" | grep -q "not found"; then
+	echo Some Shared Libraries were not found
+	ldd "$EXEC"
+	exit 1
+fi
+########################################
+# execute the program
+ARGS=""
+while [ "$#" -gt 0 ]; do
+	ARGS=$ARGS" \"$1\""
+	shift 1
+done
+/bin/bash -c "exec -a $0 $EXEC $ARGS > /dev/null 2>&1" $0
+########################################

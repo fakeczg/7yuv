@@ -1,0 +1,73 @@
+7yuv (2.5) UNRELEASED; urgency=low
+
+  * Add YUV 16-bit semi-planar P010 and P016 support
+  * Fix debian packaging dependency on libqt4-opengl
+  * Fix bug in preset history truncation
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 27 Apr 2014 10:04:34 +0900
+
+7yuv (2.4) UNRELEASED; urgency=low
+
+  * Add big-endian support for RGBA, BGRA, AYUV 32-bit formats
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 27 Apr 2014 10:04:34 +0900
+
+7yuv (2.3) UNRELEASED; urgency=low
+
+  * Fix color mapping for signed YUV formats
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 27 Apr 2014 10:04:34 +0900
+
+7yuv (2.2) UNRELEASED; urgency=low
+
+  * Raw Bayer support, variable bit depth up to 16-bit
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 21 Apr 2014 10:04:34 +0900
+
+7yuv (2.1) UNRELEASED; urgency=low
+
+  * Add support for YUV422 10-bit V210 (OpenGL mode only)
+  * Predefined resolutions can be customized in Json config
+  * Bugfix: div0 when both scaling and grid size are small
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 19 Apr 2014 10:04:34 +0900
+
+7yuv (2.0) UNRELEASED; urgency=low
+
+  * Json-format config files.
+  * Optional OpenGL rendering in graphics mode
+  * Scaling in graphics mode
+  * RGB channel filtering
+  * Color schemes for graphics mode
+  * YUV411 support
+  * RGBA raw palette format support
+  * "Screen copy" for text modes (render to text buffer)
+  * misc bug fixes
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 15 Apr 2014 10:04:34 +0900
+
+7yuv (1.8) UNRELEASED; urgency=low
+
+  * Configurable mode colour schemes.
+  * Fix AYUV rendering (Y and U channel were swapped).
+  * Detect AYUV raw graphics format based on .ayuv file extension.
+  * Test bar generation for packed AYUV, YUV444, YUV422 formats.
+  * Show CSD in filer, when opening window with new file.
+  * In-place graphics format conversion (although not all combinations supported).
+  * Some new icons
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 13 Feb 2013 10:04:34 +0900
+
+7yuv (1.7) UNRELEASED; urgency=low
+
+  * Feature additions.
+
+ -- Horst Miller <horst@datahammer.de>  Wed, 13 Feb 2013 10:04:34 +0900
+
+7yuv (1.6) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Horst Miller <horst@datahammer.de>  Sun, 10 Jun 2012 10:04:34 +0900
+
+

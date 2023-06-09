@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=7yuv
+Comment=Binary File Editor, Raw Graphics Viewer
+Icon=/data/bin/7yuv-2.5/TV32.jpg
+Exec=/data/bin/7yuv-2.5/7yuv
+Terminal=false
+Type=Application
+Categories=Development;Utility;
